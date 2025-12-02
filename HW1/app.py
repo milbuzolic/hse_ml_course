@@ -16,7 +16,7 @@ st.title("Расчет стоимости автомобиля")
 
 @st.cache_resource
 def load_model_package():
-    with open('model_for_streamlit.pickle', 'rb') as f:
+    with open('HW1/model_for_streamlit.pickle', 'rb') as f:
         return pickle.load(f)
 
 
