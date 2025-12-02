@@ -3,11 +3,11 @@
 ## Часть 1 | EDA
 Построен и проанализирован дашборд
 
-Высокая корреляция в парах:* km_driven-selling_price-km_driven-year
+Высокая корреляция в парах: km_driven-selling_price-km_driven-year
 
-Можно обработать признаки, содержащие строковые значения*
+Можно обработать признаки, содержащие строковые значения
 
-Большинство данных имеют значение Individual в признаке seller_type*
+Большинство данных имеют значение Individual в признаке seller_type
 
 Проанализированы статистики датасета
 
@@ -27,23 +27,25 @@
 
 Обучены следующие модели:
 
-- LinearRegression : Функция потерь - loss. Метрика качества r2 = 0.60
+- LinearRegression : Метрика качества r2 = 0.60
 
-- LinearRegression + StandardScaler : Функция потерь - loss. Метрика качества r2 = 0.60
+- LinearRegression + StandardScaler : Метрика качества r2 = 0.60
 
-- StandardScaler + Lasso (default) : Функция потерь - loss. Метрика качества r2 = 0.60
+- StandardScaler + Lasso (default) : Метрика качества r2 = 0.60
 
-- StandardScaler + Lasso (optimised) : Функция потерь - loss. Метрика качества r2 = 0.60
+- StandardScaler + Lasso (optimised) : Метрика качества r2 = 0.60
 
-- StandardScaler + ElasticNet (optimised) : Функция потерь - loss. Метрика качества r2 = 0.57
+- StandardScaler + ElasticNet (optimised) : Метрика качества r2 = 0.57
 
 ## Часть 3 | Добавляем категориальные фичи
 
 Добавлены и закодированы методом One hot encoding категориальные признаки: name,	fuel,	seller_type,	transmission,	owner.
 
-Признак name скорректирован и включает только название марки автомобился*
+Признак name скорректирован и отражает марки автомобилей.
 
-Обучена модель StandardScaler + OHE + Ridge (optimised) : Функция потерь - loss. Метрика качества r2 = 0.78
+Признак name скорректирован и включает только название марки автомобился.
+
+Обучена модель StandardScaler + OHE + Ridge (optimised) : Метрика качества r2 = 0.78
 
 ## Часть 4 | Бизнесовая
 
@@ -92,7 +94,7 @@
 
 ## Часть 6 | Оформление репозитория и оценка сервиса
 
-Создан репозиторий для домашних задач по курсу "Машинное обучение"
+Создан репозиторий для домашних задач по курсу "Машинное обучение": https://github.com/milbuzolic/hse_ml_course.git
 
 Загружены файлы:
 
@@ -100,7 +102,7 @@
 
 - model_for_streamlit.pickle - .pickle-файл
 
-- REPORT.md- .md-файл с выводами о проделанной работе
+- REPORT.md - .md-файл с выводами о проделанной работе
 
 Файлы для Streamlit-приложения:
 
