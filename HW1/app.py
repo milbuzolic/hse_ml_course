@@ -164,19 +164,19 @@ with tab2:
 
     with tab2_1:
         st.subheader("Зависимость стоимости от числовых признаков")
-        with open('scatter_interactive_selector.html', 'r', encoding='utf-8') as f:
+        with open('HW1/scatter_interactive_selector.html', 'r', encoding='utf-8') as f:
             html_content = f.read()
         st.components.v1.html(html_content, height=700, scrolling=True)
 
     with tab2_2:
         st.subheader("Распределение стоимости по категориальным признакам")
-        with open('categorical_boxplots_summary.html', 'r', encoding='utf-8') as f:
+        with open('HW1/categorical_boxplots_summary.html', 'r', encoding='utf-8') as f:
             html_content = f.read()
         st.components.v1.html(html_content, height=550, scrolling=True)
 
     with tab2_3:
         st.subheader("Медианная стоимость по маркам автомобилей")
-        with open('brand_median_price_histogram.html', 'r', encoding='utf-8') as f:
+        with open('HW1/brand_median_price_histogram.html', 'r', encoding='utf-8') as f:
             html_content = f.read()
         st.components.v1.html(html_content, height=650, scrolling=True)
 
